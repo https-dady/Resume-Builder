@@ -1,0 +1,71 @@
+*{
+    box-sizing:border-box;
+    font-family:Georgia, serif;
+}
+
+body{
+    background:#e7e1d9;
+    margin:0;
+    padding:20px;
+}
+
+.container{
+    display:flex;
+    gap:20px;
+}
+
+.form{
+    width:35%;
+    background:#fff;
+    padding:20px;
+    border-radius:8px;
+}
+
+.form input,.form textarea{
+    width:100%;
+    padding:8px;
+    margin:6px 0;
+}
+
+.form button{
+    margin-top:8px;
+    padding:8px;
+    width:100%;
+}
+
+.clear{background:#c0392b;color:white}
+
+.page{
+    width:65%;
+    display:flex;
+    justify-content:center;
+}
+
+.resume{
+    background:#faf7f3;
+    width:800px;
+    padding:45px 55px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+.header{text-align:center}
+.header h1{letter-spacing:4px}
+.proTitle{letter-spacing:2px;font-size:14px}
+
+section{margin-top:25px}
+h2{
+    font-size:14px;
+    letter-spacing:2px;
+    border-bottom:1px solid black;
+}
+
+.skills{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:8px;
+}
+
+@media(max-width:900px){
+    .container{flex-direction:column}
+    .form,.page{width:100%}
+}
